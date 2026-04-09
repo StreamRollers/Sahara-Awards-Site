@@ -1,0 +1,970 @@
+/* ===================================================
+   StreamRollers Top 100 Casino Influencer Awards 2026
+   SAHARA Las Vegas — Custom Event Styles
+   Color Palette: Deep navy, champagne gold, warm white
+   =================================================== */
+
+/* --- Root Variables --- */
+:root {
+    --sahara-navy: #0c1a30;
+    --sahara-navy-light: #142240;
+    --sahara-gold: #c9a84c;
+    --sahara-gold-light: #e2c97e;
+    --sahara-champagne: #f5e6c8;
+    --sahara-maroon: #6b1d2a;
+    --sahara-maroon-light: #8c2840;
+    --sahara-white: #f8f4ed;
+    --sahara-dark: #080e1a;
+    --sahara-text: #c7d0dc;
+    --sahara-accent: #d4a44a;
+}
+
+/* --- Body --- */
+.sahara-event-body {
+    background-color: #0e1726;
+    color: var(--sahara-text);
+}
+.sahara-event-body h1, .sahara-event-body h2, .sahara-event-body h3,
+.sahara-event-body h4, .sahara-event-body h5, .sahara-event-body h6 {
+    color: #fff;
+}
+
+/* --- Header --- */
+.sahara-header .sahara-menu {
+    background: rgba(10, 22, 40, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+}
+.sahara-header .main-menu ul li a {
+    color: rgba(255,255,255,0.85);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+.sahara-header .main-menu ul li a:hover,
+.sahara-header .main-menu ul li.active a {
+    color: var(--sahara-gold);
+}
+.header-logo-sr {
+    max-height: 44px;
+    width: auto;
+}
+.dual-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* --- Buttons --- */
+.sahara-btn {
+    background: linear-gradient(135deg, var(--sahara-gold) 0%, var(--sahara-gold-light) 100%) !important;
+    color: var(--sahara-navy) !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px !important;
+    padding: 16px 36px !important;
+    border-radius: 4px !important;
+    border: none !important;
+    box-shadow: 0 4px 20px rgba(201, 168, 76, 0.3) !important;
+    transition: all 0.3s ease !important;
+}
+.sahara-btn:hover {
+    background: linear-gradient(135deg, var(--sahara-gold-light) 0%, #f0d590 100%) !important;
+    box-shadow: 0 6px 30px rgba(201, 168, 76, 0.5) !important;
+    transform: translateY(-2px);
+    color: var(--sahara-navy) !important;
+}
+.sahara-btn-outline {
+    background: transparent !important;
+    color: var(--sahara-gold) !important;
+    border: 2px solid var(--sahara-gold) !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 14px !important;
+    padding: 14px 36px !important;
+    border-radius: 4px !important;
+    box-shadow: none !important;
+    transition: all 0.3s ease !important;
+}
+.sahara-btn-outline:hover {
+    background: var(--sahara-gold) !important;
+    color: var(--sahara-navy) !important;
+    box-shadow: 0 4px 20px rgba(201, 168, 76, 0.3) !important;
+}
+.sahara-btn-lg {
+    padding: 20px 60px !important;
+    font-size: 16px !important;
+}
+
+/* --- Hero Section --- */
+.sahara-hero {
+    min-height: 100vh;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+    overflow: hidden;
+}
+.sahara-hero-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, rgba(10,22,40,0.88) 0%, rgba(20,10,20,0.75) 50%, rgba(10,22,40,0.65) 100%);
+    z-index: 1;
+}
+
+/* Trophy Watermark */
+.trophy-watermark {
+    position: absolute;
+    right: -5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    max-width: 600px;
+    opacity: 0.12;
+    z-index: 2;
+    pointer-events: none;
+    filter: brightness(1.3) saturate(0.5);
+}
+.trophy-watermark img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+}
+
+/* Hero Content */
+.sahara-hero-content {
+    position: relative;
+    z-index: 5;
+}
+.hero-logos {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.hero-sr-logo {
+    height: 50px;
+    width: auto;
+}
+.hero-sahara-logo {
+    height: 44px;
+    width: auto;
+    border-radius: 4px;
+}
+.logo-divider {
+    color: var(--sahara-gold);
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 300;
+    opacity: 0.6;
+}
+.hero-pre-title {
+    color: var(--sahara-gold);
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+}
+.sahara-hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 58px;
+    line-height: 1.15;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.hero-subtitle {
+    color: var(--sahara-champagne);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    opacity: 0.8;
+}
+.hero-details {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+.hero-details li {
+    color: rgba(255,255,255,0.8);
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.hero-details li i {
+    color: var(--sahara-gold);
+    width: 28px;
+    margin-right: 8px;
+}
+
+/* Hero Image Rotator */
+.hero-image-rotator {
+    position: relative;
+    z-index: 5;
+}
+.rotator-frame {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    border: 2px solid rgba(201, 168, 76, 0.25);
+}
+.rotator-img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+.rotator-img.active {
+    opacity: 1;
+}
+.rotator-label {
+    position: absolute;
+    bottom: -1px;
+    left: 0; right: 0;
+    background: linear-gradient(0deg, rgba(10,22,40,0.95) 0%, transparent 100%);
+    padding: 30px 20px 16px;
+    text-align: center;
+}
+.rotator-label-text {
+    color: var(--sahara-champagne);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+/* --- Section Styling --- */
+.sahara-section-tag {
+    display: inline-block;
+    color: var(--sahara-gold);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+.sahara-title span {
+    color: var(--sahara-gold) !important;
+}
+.sahara-text {
+    color: var(--sahara-text) !important;
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+}
+
+/* --- About Section --- */
+.sahara-about-area {
+    background: linear-gradient(180deg, #0e1726 0%, #111d32 100%);
+}
+.sahara-about-area .about-title h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #fff;
+}
+.sahara-about-area .about-title span {
+    color: var(--sahara-gold);
+}
+.sahara-about-area p {
+    color: var(--sahara-text);
+    font-size: 16px;
+    line-height: 1.8;
+}
+.sahara-about-area p strong {
+    color: #fff;
+}
+
+/* Stats Grid */
+.sahara-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.stat-card {
+    background: rgba(201, 168, 76, 0.06);
+    border: 1px solid rgba(201, 168, 76, 0.15);
+    border-radius: 8px;
+    padding: 30px 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.stat-card:hover {
+    border-color: rgba(201, 168, 76, 0.35);
+    background: rgba(201, 168, 76, 0.1);
+    transform: translateY(-4px);
+}
+.stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 4px;
+    line-height: 1.1;
+}
+.gold-text {
+    color: var(--sahara-gold) !important;
+}
+.stat-card p {
+    color: var(--sahara-text);
+    font-size: 13px;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+/* --- Details Section (Event Experience) --- */
+.sahara-details-area {
+    position: relative;
+}
+.sahara-details-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(180deg, rgba(10,22,40,0.92) 0%, rgba(107,29,42,0.75) 50%, rgba(10,22,40,0.95) 100%);
+    z-index: 1;
+}
+.sahara-details-area h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+}
+.sahara-feature-card {
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 8px;
+    padding: 36px 28px;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+.sahara-feature-card:hover {
+    border-color: rgba(201, 168, 76, 0.35);
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-4px);
+}
+.feature-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--sahara-gold) 0%, var(--sahara-gold-light) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.feature-icon i {
+    color: var(--sahara-navy);
+    font-size: 22px;
+}
+.sahara-feature-card h5 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+.sahara-feature-card p {
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* --- Presenter Section --- */
+.sahara-presenter-area {
+    background: linear-gradient(180deg, #111d32 0%, #0e1726 100%);
+}
+.presenter-photo {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+.presenter-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+.presenter-badge {
+    position: absolute;
+    bottom: 0;
+    left: 0; right: 0;
+    background: linear-gradient(0deg, rgba(10,22,40,0.95) 0%, transparent 100%);
+    padding: 40px 20px 16px;
+    text-align: center;
+}
+.presenter-badge span {
+    color: var(--sahara-gold);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+.presenter-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 4px;
+}
+.presenter-title {
+    color: var(--sahara-gold) !important;
+    font-size: 16px !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px !important;
+}
+.presenter-text p {
+    color: var(--sahara-text);
+    font-size: 15px;
+    line-height: 1.8;
+}
+.presenter-text em {
+    color: var(--sahara-champagne);
+}
+
+/* --- Winners Section --- */
+.sahara-winners-area {
+    position: relative;
+    overflow: hidden;
+}
+.sahara-winners-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, var(--sahara-navy) 0%, #1a0e20 50%, var(--sahara-navy) 100%);
+    z-index: 1;
+}
+.sahara-winners-area h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+}
+.text-white-70 {
+    color: rgba(255,255,255,0.7) !important;
+}
+
+/* Winner Card */
+.winner-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(201, 168, 76, 0.12);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    height: 100%;
+}
+.winner-card:hover {
+    border-color: var(--sahara-gold);
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(201, 168, 76, 0.15);
+}
+.winner-photo {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+.winner-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.winner-card:hover .winner-photo img {
+    transform: scale(1.05);
+}
+.winner-info {
+    padding: 20px 16px;
+    text-align: center;
+}
+.winner-info h5 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+.winner-info p {
+    color: var(--sahara-gold);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+.winner-social a {
+    display: inline-flex;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.15);
+    align-items: center;
+    justify-content: center;
+    margin: 0 4px;
+    color: rgba(255,255,255,0.6);
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+.winner-social a:hover {
+    border-color: var(--sahara-gold);
+    color: var(--sahara-gold);
+    background: rgba(201, 168, 76, 0.1);
+}
+
+/* --- Venue Section --- */
+.sahara-venue-area {
+    background: linear-gradient(180deg, #0e1726 0%, #111d32 100%);
+}
+.sahara-venue-area h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+}
+.venue-image-wrapper {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+    height: 100%;
+}
+.venue-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    min-height: 300px;
+    transition: transform 0.6s ease;
+}
+.venue-image-wrapper:hover .venue-img {
+    transform: scale(1.03);
+}
+.venue-img-label {
+    position: absolute;
+    bottom: 0;
+    left: 0; right: 0;
+    background: linear-gradient(0deg, rgba(10,22,40,0.9) 0%, transparent 100%);
+    padding: 40px 20px 16px;
+    color: var(--sahara-champagne);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-align: center;
+}
+.venue-detail-card {
+    background: rgba(201, 168, 76, 0.05);
+    border: 1px solid rgba(201, 168, 76, 0.12);
+    border-radius: 8px;
+    padding: 32px 24px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+.venue-detail-card:hover {
+    border-color: rgba(201, 168, 76, 0.3);
+    transform: translateY(-4px);
+}
+.venue-detail-card i {
+    color: var(--sahara-gold);
+    font-size: 32px;
+    margin-bottom: 16px;
+    display: block;
+}
+.venue-detail-card h5 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+.venue-detail-card p {
+    color: var(--sahara-text);
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* --- Experience / Convergence Section --- */
+.sahara-experience-area {
+    background: linear-gradient(180deg, #111d32 0%, #0a1628 100%);
+}
+.sahara-experience-area h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+}
+.convergence-card {
+    background: rgba(201, 168, 76, 0.04);
+    border: 1px solid rgba(201, 168, 76, 0.12);
+    border-radius: 10px;
+    padding: 36px 28px;
+    height: 100%;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+.convergence-card:hover {
+    border-color: rgba(201, 168, 76, 0.35);
+    background: rgba(201, 168, 76, 0.08);
+    transform: translateY(-6px);
+}
+.convergence-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--sahara-gold) 0%, var(--sahara-gold-light) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+}
+.convergence-icon i {
+    color: var(--sahara-navy);
+    font-size: 28px;
+}
+.convergence-sr-logo {
+    height: 42px;
+    width: auto;
+}
+.convergence-card h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+.convergence-card p {
+    color: var(--sahara-text);
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* --- Branding Section --- */
+.sahara-branding-area h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+}
+.sahara-check-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sahara-check-list li {
+    color: rgba(255,255,255,0.8);
+    font-size: 15px;
+    margin-bottom: 14px;
+    padding-left: 8px;
+}
+.sahara-check-list li i {
+    color: var(--sahara-gold);
+    margin-right: 12px;
+    font-size: 16px;
+}
+.brand-logos-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+}
+.brand-stack-logo {
+    max-width: 240px;
+    height: auto;
+    border-radius: 8px;
+}
+.sahara-stack {
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+.sr-stack {
+    filter: drop-shadow(0 10px 30px rgba(0,0,0,0.3));
+}
+
+/* --- RSVP Section --- */
+.sahara-rsvp-area {
+    background: linear-gradient(180deg, #0a1628 0%, #111d32 100%);
+}
+.sahara-rsvp-area h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+}
+.sahara-rsvp-card {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(201, 168, 76, 0.2);
+    border-radius: 12px;
+    padding: 50px 40px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+.rsvp-price-header {
+    border-bottom: 1px solid rgba(201, 168, 76, 0.15);
+    padding-bottom: 30px;
+}
+.rsvp-label {
+    color: var(--sahara-gold) !important;
+    font-size: 14px !important;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 8px !important;
+}
+.rsvp-price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 4px;
+}
+.price-currency {
+    font-size: 28px;
+    color: var(--sahara-gold);
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+.price-amount {
+    font-size: 56px;
+    color: #fff;
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+}
+.price-per {
+    font-size: 16px;
+    color: var(--sahara-text);
+    font-weight: 400;
+}
+.rsvp-note {
+    color: var(--sahara-text) !important;
+    font-size: 13px !important;
+    margin-top: 8px !important;
+}
+
+/* Form Styles */
+.sahara-rsvp-form label {
+    color: rgba(255,255,255,0.7);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.sahara-rsvp-form .required {
+    color: var(--sahara-gold);
+}
+.sahara-input {
+    background: rgba(255,255,255,0.05) !important;
+    border: 1px solid rgba(201, 168, 76, 0.15) !important;
+    border-radius: 4px !important;
+    color: #fff !important;
+    padding: 12px 16px !important;
+    font-size: 15px !important;
+    transition: all 0.3s ease !important;
+    height: auto !important;
+}
+.sahara-input:focus {
+    border-color: var(--sahara-gold) !important;
+    background: rgba(201, 168, 76, 0.06) !important;
+    box-shadow: 0 0 0 3px rgba(201, 168, 76, 0.1) !important;
+    outline: none !important;
+}
+.sahara-input::placeholder {
+    color: rgba(255,255,255,0.3) !important;
+}
+select.sahara-input {
+    appearance: auto;
+}
+select.sahara-input option {
+    background: var(--sahara-navy);
+    color: #fff;
+}
+
+/* Success Message */
+.rsvp-success-message {
+    padding: 40px;
+}
+.rsvp-success-message i {
+    font-size: 64px;
+    color: var(--sahara-gold);
+    margin-bottom: 20px;
+}
+.rsvp-success-message h3 {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+.rsvp-success-message p {
+    color: var(--sahara-text);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* --- Footer --- */
+.sahara-footer {
+    border-top: 1px solid rgba(201, 168, 76, 0.1);
+}
+.footer-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.footer-sr-logo {
+    height: 48px;
+    width: auto;
+}
+.footer-sahara-logo {
+    height: 40px;
+    width: auto;
+    border-radius: 4px;
+}
+.footer-logo-divider {
+    color: var(--sahara-gold);
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    opacity: 0.5;
+}
+.sahara-footer .text-white-70 {
+    color: rgba(255,255,255,0.6) !important;
+    font-size: 14px;
+}
+.sahara-footer .footer-social a {
+    display: inline-flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(201, 168, 76, 0.25);
+    align-items: center;
+    justify-content: center;
+    color: var(--sahara-gold);
+    margin: 0 6px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+.sahara-footer .footer-social a:hover {
+    background: var(--sahara-gold);
+    color: var(--sahara-navy);
+}
+.footer-contact {
+    color: rgba(255,255,255,0.5) !important;
+    font-size: 14px !important;
+}
+.footer-contact a {
+    color: var(--sahara-gold) !important;
+    text-decoration: none;
+}
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.05);
+}
+.footer-copy {
+    color: rgba(255,255,255,0.35) !important;
+    font-size: 12px !important;
+    margin-bottom: 0 !important;
+}
+
+/* --- Responsive --- */
+@media (max-width: 991px) {
+    .sahara-hero-content h1 {
+        font-size: 40px;
+    }
+    .hero-subtitle {
+        font-size: 16px;
+    }
+    .trophy-watermark {
+        display: none;
+    }
+    .sahara-stats-grid {
+        margin-top: 40px;
+    }
+    .sahara-rsvp-card {
+        padding: 30px 24px;
+    }
+    .price-amount {
+        font-size: 42px;
+    }
+    .brand-logos-stack {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .sahara-hero-content h1 {
+        font-size: 32px;
+    }
+    .hero-pre-title {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+    .hero-subtitle {
+        font-size: 14px;
+    }
+    .hero-logos {
+        flex-wrap: wrap;
+    }
+    .sahara-stats-grid {
+        grid-template-columns: 1fr;
+    }
+    .stat-number {
+        font-size: 36px;
+    }
+    .sahara-hero {
+        min-height: auto;
+        padding: 120px 0 60px;
+    }
+    .hero-cta .btn {
+        display: block;
+        margin-bottom: 10px;
+        margin-right: 0 !important;
+    }
+    .sahara-about-area h2,
+    .sahara-details-area h2,
+    .sahara-presenter-area h2,
+    .sahara-winners-area h2,
+    .sahara-venue-area h2,
+    .sahara-experience-area h2,
+    .sahara-branding-area h2,
+    .sahara-rsvp-area h2 {
+        font-size: 28px;
+    }
+    .presenter-name {
+        font-size: 28px;
+    }
+}
+
+/* --- Scrollbar Styling --- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--sahara-dark);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(201, 168, 76, 0.3);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(201, 168, 76, 0.5);
+}
+
+/* --- Sticky Header Gold Border on Scroll --- */
+.sahara-menu.sticky-menu {
+    background: rgba(10, 22, 40, 0.98) !important;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.25);
+}
+
+/* --- Override template defaults for this theme --- */
+.sahara-event-body .btn:hover {
+    box-shadow: 0 6px 30px rgba(201, 168, 76, 0.4) !important;
+}
+.sahara-event-body #scrollUp {
+    background: var(--sahara-gold);
+    color: var(--sahara-navy);
+}
+.sahara-event-body #scrollUp:hover {
+    background: var(--sahara-gold-light);
+}
